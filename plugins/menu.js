@@ -135,7 +135,7 @@ const menu = async (m, Matrix) => {
     if (validCommands.includes(cmd)) {
       const mainMenu = `
 ◈━━━━━━━━━━━━━━━━◈
-│❒ ${toFancyFont("Toxic-MD")} Command Menu ⚠
+│❒ ${toFancyFont("Makamesco-MD")} Command Menu ⚠
 │
 │ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("Toxic-MD")}
 │ 📋 *${toFancyFont("Total Commands")}*: ${totalCommands}
@@ -203,11 +203,11 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
           externalAdReply: {
             showAdAttribution: true, // Marks as an ad
             title: `${toFancyFont("Toxic-MD")} Menu`,
-            body: `${pushwish} Explore Toxic-MD's features!`,
-            sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+            body: `${pushwish} Explore Makamesco-MD's features!`,
+            sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
+            mediaUrl: "https://files.catbox.moe/sigghy.jpg'/",
           },
         },
       };
@@ -418,7 +418,7 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
 
 ${menuResponse}
 
-> Pσɯҽɾҽԃ Ⴆყ Tσxιƈ-ɱԃȥ
+> Pσɯҽɾҽԃ Ⴆყ Makamesco-ɱԃȥ
 `;
 
       // Send sub-menu with or without image
@@ -433,11 +433,11 @@ ${menuResponse}
               externalAdReply: {
                 showAdAttribution: true, // Marks as an ad
                 title: `${toFancyFont("Toxic-MD")} ${toFancyFont(menuTitle)}`,
-                body: `Explore Toxic-MD's ${menuTitle.toLowerCase()} commands!`,
-                sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+                body: `Explore Makamesco-MD's ${menuTitle.toLowerCase()} commands!`,
+                sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
                 mediaType: 1,
                 renderLargerThumbnail: true,
-                mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
+                mediaUrl: "https://files.catbox.moe/sigghy.jpg'/",
               },
             },
           },
@@ -451,8 +451,8 @@ ${menuResponse}
             externalAdReply: {
               showAdAttribution: true, // Marks as an ad
               title: `${toFancyFont("Toxic-MD")} ${toFancyFont(menuTitle)}`,
-              body: `Explore Toxic-MD's ${menuTitle.toLowerCase()} commands!`,
-              sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+              body: `Explore Makamesco-MD's ${menuTitle.toLowerCase()} commands!`,
+              sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
               mediaType: 1,
               renderLargerThumbnail: true,
             },
