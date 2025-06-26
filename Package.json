@@ -6,11 +6,11 @@
   "type": "module",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name TOXIC-MD",
-    "stop": "pm2 stop TOXIC-MD",
+    "stop": "pm2 stop MAKAMESCO-MD",
     "restart": "pm2 restart TOXIC-MD"
   },
-  "keywords": ["Toxic-MD", "whatsapp-bot", "whatsapp md bot"],
-  "author": "xhclinton",
+  "keywords": ["Makamesco-MD", "whatsapp-bot", "whatsapp md bot"],
+  "author": "Marcas",
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
