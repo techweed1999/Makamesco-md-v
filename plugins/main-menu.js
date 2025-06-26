@@ -48,7 +48,7 @@ const menu = async (m, Matrix) => {
 
     const mode = config.MODE === "public" ? "public" : "private";
     const str = `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* Menu 🔥
+│❒ *Makamesco-MD* Menu 🔥
 │❒ 👑 *Owner*: ${config.OWNER_NAME}
 │❒ 🤖 *Bot*: ${config.BOT_NAME}
 │❒ ⚙️ *Mode*: ${mode}
@@ -140,8 +140,8 @@ const menu = async (m, Matrix) => {
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363398040175935@newsletter",
-            newsletterName: "Toxic-MD",
+            newsletterJid: "120363418628641913@newsletter",
+            newsletterName: "Makamesco-MD",
             serverMessageId: 143,
           },
         },
@@ -162,7 +162,7 @@ const menu = async (m, Matrix) => {
     console.error(`❌ Menu error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag, fam! Try again! 😈
+│❒ *Makamesco-MD* hit a snag, fam! Try again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
