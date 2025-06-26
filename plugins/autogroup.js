@@ -16,7 +16,7 @@ const groupSetting = async (m, Matrix) => {
     if (!m.isGroup) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, dumbass, *Toxic-MD* only runs this in groups! Get with it! 😤🏠
+│❒ Yo, dumbass, *Makamesco-MD* only runs this in groups! Get with it! 😤🏠
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -30,7 +30,7 @@ const groupSetting = async (m, Matrix) => {
     if (!botAdmin) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* ain’t got admin juice to run this! Promote me, scrub! 😡🔧
+│❒ *Makamesco-MD* ain’t got admin juice to run this! Promote me, scrub! 😡🔧
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -66,7 +66,7 @@ const groupSetting = async (m, Matrix) => {
         await Matrix.groupSettingUpdate(m.from, "announcement");
         return Matrix.sendMessage(m.from, {
           text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* locked this group down tight! No chatter, fam! 🔒💥
+│❒ *Makamesco-MD* locked this group down tight! No chatter, fam! 🔒💥
 ◈━━━━━━━━━━━━━━━━◈`,
         }, { quoted: m });
       } else if (groupSetting === "open") {
@@ -79,7 +79,7 @@ const groupSetting = async (m, Matrix) => {
       } else {
         return Matrix.sendMessage(m.from, {
           text: `◈━━━━━━━━━━━━━━━━◈
-│❒ What’s this trash? *Toxic-MD* only takes *open*/*unmute* or *close*/*mute*, clown! 🤡
+│❒ What’s this trash? *Makamesco-MD* only takes *open*/*unmute* or *close*/*mute*, clown! 🤡
 │❒ Ex: *${prefix}group open* or *${prefix}group close 16:00*
 ◈━━━━━━━━━━━━━━━━◈`,
         }, { quoted: m });
@@ -118,14 +118,14 @@ const groupSetting = async (m, Matrix) => {
             await Matrix.groupSettingUpdate(m.from, "announcement");
             await Matrix.sendMessage(m.from, {
               text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* shut this group down! Quiet time, fam! 🔒💥
+│❒ *Makamesco-MD* shut this group down! Quiet time, fam! 🔒💥
 ◈━━━━━━━━━━━━━━━━◈`,
             });
           } else if (groupSetting === "open") {
             await Matrix.groupSettingUpdate(m.from, "not_announcement");
             await Matrix.sendMessage(m.from, {
               text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* opened the floodgates! Let’s get loud, fam! 🗣️🔥
+│❒ *Makamesco-MD* opened the floodgates! Let’s get loud, fam! 🗣️🔥
 ◈━━━━━━━━━━━━━━━━◈`,
             });
           }
@@ -133,7 +133,7 @@ const groupSetting = async (m, Matrix) => {
           console.error("Scheduled task error:", err);
           await Matrix.sendMessage(m.from, {
             text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up the schedule, fam! Somethin’s busted! 😈
+│❒ *Makamesco-MD* fucked up the schedule, fam! Somethin’s busted! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
           });
         }
@@ -143,14 +143,14 @@ const groupSetting = async (m, Matrix) => {
 
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* set to ${groupSetting === "close" ? "lock" : "open"} *${groupMetadata.subject}* at *${time}* EAT! You’re runnin’ this, boss! 💪🔥
+│❒ *Makamesco-MD* set to ${groupSetting === "close" ? "lock" : "open"} *${groupMetadata.subject}* at *${time}* EAT! You’re runnin’ this, boss! 💪🔥
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   } catch (error) {
     console.error(`❌ Group error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* screwed up somewhere, fam! Try that again! 😈
+│❒ *Makamesco-MD* screwed up somewhere, fam! Try that again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
