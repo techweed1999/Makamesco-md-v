@@ -19,7 +19,7 @@
 
 ## 🛠️ FORK REPO
 
-<a href="https://github.com/sesco001/Makamesco_md/fork">
+<a href="https://github.com/makamesco/Makamesco-md-v/fork">
   <img src="https://img.shields.io/badge/CLICK%20HERE-purple" alt="FORK MAKAMESCO_MD" width="150">
 </a>
 
@@ -55,8 +55,6 @@
 
 ## 🖥️ HOST ON DISCORD / VPS
 
-<details>
-<summary>CLICK FOR MORE</summary>
 
 - 📦 Download ZIP:
   <a href="https://github.com/sesco001/Makamesco_md/archive/refs/heads/main.zip">
@@ -68,7 +66,7 @@
     <img src="https://img.shields.io/badge/SIGNUP%20&%20DEPLOY-gold" width="150">
   </a>
 
-</details>
+
 
 ---
 
