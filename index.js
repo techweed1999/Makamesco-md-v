@@ -18,7 +18,6 @@ import pkg from "./lib/autoreact.cjs";
 const { emojis, doReact } = pkg;
 const prefix = config.PREFIX || "!";
 const app = express();
-const PORT = config.PORT || 3000;
 
 const MAIN_LOGGER = pino({
   timestamp: () => `,"time":"${new Date().toJSON()}"`,
@@ -42,7 +41,6 @@ if (!fs.existsSync(sessionDir)) {
 async function loadBase64Session() {
   const sessionFile = path.join(__dirname, "session.json");
 
-  // 1. Check if session.json exists
   if (!fs.existsSync(sessionFile)) {
     console.error(chalk.red(`◈━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◈
 │❒ session.json not found!
@@ -52,7 +50,6 @@ async function loadBase64Session() {
     process.exit(1);
   }
 
-  // Read session
   let sessionData;
   try {
     sessionData = JSON.parse(fs.readFileSync(sessionFile, "utf-8"));
@@ -66,7 +63,6 @@ async function loadBase64Session() {
   
   const base64Creds = sessionData.SESSION_ID;
 
-  // Validate the SESSION_ID
   if (!base64Creds || base64Creds === "Your session id here" || base64Creds === "") {
     console.error(chalk.red(`◈━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◈
 │❒ Invalid or missing SESSION_ID in session.json
@@ -75,7 +71,6 @@ async function loadBase64Session() {
     process.exit(1);
   }
 
-  // Decode and write creds.json
   try {
     const credsBuffer = Buffer.from(base64Creds, "base64");
     await fs.promises.writeFile(credsPath, credsBuffer);
@@ -154,7 +149,6 @@ async function start() {
 
     let hasSentStartMessage = false;
 
-    // Connection update handler
     Matrix.ev.on("connection.update", async (update) => {
       const { connection, lastDisconnect } = update;
       if (connection === "close") {
@@ -267,10 +261,8 @@ async function start() {
       }
     });
 
-    // Save credentials
     Matrix.ev.on("creds.update", saveCreds);
 
-    // Message handler
     Matrix.ev.on("messages.upsert", async (chatUpdate) => {
       try {
         const mek = chatUpdate.messages[0];
@@ -285,10 +277,8 @@ async function start() {
 
         const fromJid = mek.key.participant || mek.key.remoteJid;
 
-        // Status handling
         if (mek.key.remoteJid === "status@broadcast" && config.AUTO_STATUS_SEEN) {
           await Matrix.readMessages([mek.key]);
-          // Autolike function
           if (config.AUTO_LIKE) {
             const autolikeEmojis = ['🗿', '⌚️', '💠', '👣', '🍆', '💔', '🤍', '❤️‍🔥', '💣', '🧠', '🦅', '🌻', '🧊', '🛑', '🧸', '👑', '📍', '😅', '🎭', '🎉', '😳', '💯', '🔥', '💫', '🐒', '💗', '❤️‍🔥', '👁️', '👀', '🙌', '🙆', '🌟', '💧', '🦄', '🟢', '🎎', '✅', '🥱', '🌚', '💚', '💕', '😉', '😒'];
             const randomEmoji = autolikeEmojis[Math.floor(Math.random() * autolikeEmojis.length)];
@@ -297,7 +287,6 @@ async function start() {
               react: { text: randomEmoji, key: mek.key } 
             }, { statusJidList: [mek.key.participant, nickk] });
           }
-          // Status reply function
           if (config.AUTO_STATUS_REPLY) {
             const randomReply = toxicReplies[Math.floor(Math.random() * toxicReplies.length)];
             await Matrix.sendMessage(fromJid, { text: randomReply }, { quoted: mek });
@@ -305,31 +294,25 @@ async function start() {
           return;
         }
 
-        // Auto-react function
         if (!mek.key.fromMe && config.AUTO_REACT && mek.message) {
           const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
           await doReact(randomEmoji, mek, Matrix);
         }
 
-        // Auto-read function
         if (config.AUTO_READ && !mek.key.fromMe) {
           await Matrix.readMessages([mek.key]);
         }
 
-        // Command handler
         await Handler(chatUpdate, Matrix, logger);
       } catch (err) {
         // Suppress non-critical errors
       }
     });
 
-    // Call handler
     Matrix.ev.on("call", async (json) => await Callupdate(json, Matrix));
 
-    // Group update handler
     Matrix.ev.on("group-participants.update", async (messag) => await GroupUpdate(Matrix, messag));
 
-    // Set bot mode
     if (config.MODE === "public") {
       Matrix.public = true;
     } else if (config.MODE === "private") {
@@ -349,4 +332,7 @@ app.get("/", (req, res) => {
   res.send("MAKAMESCO_MD is running!");
 });
 
-app.listen(PORT, () => {});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`MAKAMESCO_MD server running on port ${PORT}`);
+});
