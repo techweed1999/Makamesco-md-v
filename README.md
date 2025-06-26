@@ -17,45 +17,31 @@
 
 ---
 
-## 🛠️ FORK REPO
+## 🧭 ALL-IN-ONE DEPLOYMENT TABLE
 
-[![CLICK HERE](https://img.shields.io/badge/CLICK%20HERE-purple)](https://github.com/makamesco/Makamesco-md-v/fork)
+| 🆔 | 🌐 Platform | 🛠️ Deployment Type | 🔗 Deploy Link |
+|:--:|:-----------:|---------------------|----------------|
+| 1 | ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white) | **Fork Repository** | [Click to Fork](https://github.com/makamesco/Makamesco-md-v/fork) |
+| 2 | ![Render](https://img.shields.io/badge/-Render-2c2c2c?style=flat-square&logo=render&logoColor=white) | **Session Pairing Tool** | [Get Session ID](https://makamesco-md-code.onrender.com) |
+| 3 | ![Render](https://img.shields.io/badge/-Render-3f3f3f?style=flat-square&logo=vercel&logoColor=white) | **One-Click Deploy** | [Deploy on Render](https://render.com/) |
+| 4 | ![Koyeb](https://img.shields.io/badge/-Koyeb-111111?style=flat-square&logo=koyeb&logoColor=white) | **One-Click Deploy** | [Deploy on Koyeb](https://www.koyeb.com/) |
+| 5 | ![Heroku](https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white) | **One-Click Deploy** | [Deploy on Heroku](https://dashboard.heroku.com/new?template=https://github.com/sesco001/Makamesco_md) |
+| 6 | ![GitHub](https://img.shields.io/badge/-ZIP%20Archive-000000?style=flat-square&logo=github&logoColor=white) | **Download Source Files** | [Download ZIP](https://github.com/sesco001/Makamesco_md/archive/refs/heads/main.zip) |
+| 7 | ![VPS](https://img.shields.io/badge/-VPS%20Hosting-gold?style=flat-square&logo=linux&logoColor=black) | **Deploy to Bot-Hosting VPS** | [Signup & Deploy](https://bot-hosting.net/?aff=1259151615210819614) |
 
 ---
 
-## 🔐 SESSION PAIRING (Start Bot Now!)
+## 🛠️ SESSION PAIRING
 
 [![GET SESSION ID HERE](https://img.shields.io/badge/GET-SESSION%20ID%20HERE-green?style=for-the-badge&logo=kenya)](https://makamesco-md-code.onrender.com)
 
 ---
 
-## 📋 DEPLOYMENT OPTIONS TABLE
-
-| 🆔 No. | 🚀 Deployment Type     | 🌍 Platform      | 🔗 Link/Button |
-|:-----:|-------------------------|------------------|----------------|
-| 1     | Fork Repository         | GitHub           | [Click to Fork](https://github.com/makamesco/Makamesco-md-v/fork) |
-| 2     | Session Pairing         | Render Web Tool  | [Get Session ID](https://makamesco-md-code.onrender.com) |
-| 3     | One-Click Deploy        | Render           | [Deploy on Render](https://render.com/) |
-| 4     | One-Click Deploy        | Koyeb            | [Deploy on Koyeb](https://www.koyeb.com/) |
-| 5     | One-Click Deploy        | Heroku           | [Deploy on Heroku](https://dashboard.heroku.com/new?template=https://github.com/sesco001/Makamesco_md) |
-| 6     | Download ZIP Files      | GitHub           | [Download ZIP](https://github.com/sesco001/Makamesco_md/archive/refs/heads/main.zip) |
-| 7     | VPS Hosting             | Bot-Hosting.net  | [VPS Signup & Deploy](https://bot-hosting.net/?aff=1259151615210819614) |
-
----
-
-## 🖥️ ONE-CLICK DEPLOY BUTTONS (Alternative Access)
-
-### 🟣 Deploy on Render
+## 📦 DEPLOY BUTTONS (Optional Access)
 
 [![Deploy on Render](https://img.shields.io/badge/DEPLOY%20ON%20RENDER-3f3f3f?style=for-the-badge&logo=vercel&logoColor=white)](https://render.com/)
-
-### 🟡 Deploy on Koyeb
-
 [![Deploy on Koyeb](https://img.shields.io/badge/DEPLOY%20ON%20KOYEB-121212?style=for-the-badge&logo=koyeb&logoColor=white)](https://www.koyeb.com/)
-
-### 🟣 Deploy on Heroku
-
-[![Tap to deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/sesco001/Makamesco_md)
+[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/sesco001/Makamesco_md)
 
 ---
 
