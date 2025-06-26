@@ -17,17 +17,17 @@
 
 ---
 
-## 🧭 ALL-IN-ONE DEPLOYMENT TABLE (Clickable Logos)
+## 🧭 ALL-IN-ONE DEPLOYMENT TABLE (Logos = Links)
 
-| 🆔 | 🚀 Platform + Deployment Type | 🔗 Click to Deploy |
-|:--:|:-----------------------------:|:------------------:|
-| 1 | [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/makamesco/Makamesco-md-v/fork) <br> **Fork Repository** | [Click to Fork](https://github.com/makamesco/Makamesco-md-v/fork) |
-| 2 | [![Render](https://img.shields.io/badge/-Render-2c2c2c?style=flat-square&logo=render&logoColor=white)](https://makamesco-md-code.onrender.com) <br> **Session Pairing Tool** | [Get Session ID](https://makamesco-md-code.onrender.com) |
-| 3 | [![Render](https://img.shields.io/badge/-Render-3f3f3f?style=flat-square&logo=vercel&logoColor=white)](https://render.com/) <br> **One-Click Deploy** | [Deploy on Render](https://render.com/) |
-| 4 | [![Koyeb](https://img.shields.io/badge/-Koyeb-111111?style=flat-square&logo=koyeb&logoColor=white)](https://www.koyeb.com/) <br> **One-Click Deploy** | [Deploy on Koyeb](https://www.koyeb.com/) |
-| 5 | [![Heroku](https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?template=https://github.com/sesco001/Makamesco_md) <br> **One-Click Deploy** | [Deploy on Heroku](https://dashboard.heroku.com/new?template=https://github.com/sesco001/Makamesco_md) |
-| 6 | [![ZIP](https://img.shields.io/badge/-ZIP%20Archive-000000?style=flat-square&logo=github&logoColor=white)](https://github.com/sesco001/Makamesco_md/archive/refs/heads/main.zip) <br> **Download Source** | [Download ZIP](https://github.com/sesco001/Makamesco_md/archive/refs/heads/main.zip) |
-| 7 | [![VPS](https://img.shields.io/badge/-VPS%20Hosting-gold?style=flat-square&logo=linux&logoColor=black)](https://bot-hosting.net/?aff=1259151615210819614) <br> **Bot Hosting** | [Deploy to VPS](https://bot-hosting.net/?aff=1259151615210819614) |
+| 🆔 | 🌐 Platform + Deployment Type | 🔗 Action |
+|:--:|:-----------------------------|:---------|
+| 1 | [![GitHub](https://img.shields.io/badge/-Fork_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/makamesco/Makamesco-md-v/fork) | **[Click to Fork](https://github.com/makamesco/Makamesco-md-v/fork)** |
+| 2 | [![Render](https://img.shields.io/badge/-Get_Session_ID-2c2c2c?style=for-the-badge&logo=render&logoColor=white)](https://makamesco-md-code.onrender.com) | **[Get Session ID](https://makamesco-md-code.onrender.com)** |
+| 3 | [![Render](https://img.shields.io/badge/-Render_Deploy-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://render.com/) | **[Deploy on Render](https://render.com/)** |
+| 4 | [![Koyeb](https://img.shields.io/badge/-Koyeb_Deploy-111111?style=for-the-badge&logo=koyeb&logoColor=white)](https://www.koyeb.com/) | **[Deploy on Koyeb](https://www.koyeb.com/)** |
+| 5 | [![Heroku](https://img.shields.io/badge/-Heroku_Deploy-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?template=https://github.com/sesco001/Makamesco_md) | **[Deploy on Heroku](https://dashboard.heroku.com/new?template=https://github.com/sesco001/Makamesco_md)** |
+| 6 | [![ZIP](https://img.shields.io/badge/-Download_ZIP-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sesco001/Makamesco_md/archive/refs/heads/main.zip) | **[Download ZIP](https://github.com/sesco001/Makamesco_md/archive/refs/heads/main.zip)** |
+| 7 | [![VPS](https://img.shields.io/badge/-VPS_Deploy-gold?style=for-the-badge&logo=linux&logoColor=black)](https://bot-hosting.net/?aff=1259151615210819614) | **[Deploy to VPS](https://bot-hosting.net/?aff=1259151615210819614)** |
 
 ---
 
@@ -53,7 +53,7 @@
 
 ### 🌐 WEBSITE
 
-[![VISIT WEBSITE](https://img.shields.io/badge/ VISIT%20TO%20MY%20WEBSITE -25D366?style=for-the-badge&logo=discord&logoColor=white)](https://Makamescodigitalsolutions.com)
+[![VISIT WEBSITE](https://img.shields.io/badge/VISIT_TO_MY_WEBSITE-25D366?style=for-the-badge&logo=googlechrome&logoColor=white)](https://Makamescodigitalsolutions.com)
 
 ### 📢 WHATSAPP CHANNEL
 
