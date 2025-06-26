@@ -12,7 +12,7 @@ const leaveGroup = async (m, Matrix) => {
     if (!m.isGroup) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, dumbass, *Toxic-MD* only ditches groups! This ain’t one! 😤🏠
+│❒ Yo, dumbass, *Makamesco-MD* only ditches groups! This ain’t one! 😤🏠
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -20,7 +20,7 @@ const leaveGroup = async (m, Matrix) => {
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Fuck off, poser! Only *Toxic-MD*’s boss can tell me to bounce! 😎🔪
+│❒ Fuck off, poser! Only *MaKamesco-MD*’s boss can tell me to bounce! 😎🔪
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -36,7 +36,7 @@ const leaveGroup = async (m, Matrix) => {
     console.error(`❌ Leave error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up tryin’ to ditch, fam! Somethin’s busted! 😈
+│❒ *Makamesco-MD* fucked up tryin’ to ditch, fam! Somethin’s busted! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
