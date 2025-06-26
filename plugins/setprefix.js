@@ -14,7 +14,7 @@ const setprefixCommand = async (m, Matrix) => {
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, only *Toxic-MD*’s boss can touch this, fam! 🔐
+│❒ Yo, only *Makamesco-MD*’s boss can touch this, fam! 🔐
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -22,7 +22,7 @@ const setprefixCommand = async (m, Matrix) => {
     if (!text) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Gimme a new prefix, fam! Don’t leave *Toxic-MD* hangin’! 😎
+│❒ Gimme a new prefix, fam! Don’t leave *Makamesco-MD* hangin’! 😎
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -42,21 +42,21 @@ const setprefixCommand = async (m, Matrix) => {
       console.error(`Error saving config: ${error.message}`);
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* couldn’t save the prefix, fam! Check the server! 😣
+│❒ *Makamesco-MD* couldn’t save the prefix, fam! Check the server! 😣
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
 
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* prefix switched to *${text}*! You’re runnin’ the show, fam! 🔧🔥
+│❒ *Makamesco-MD* prefix switched to *${text}*! You’re runnin’ the show, fam! 🔧🔥
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   } catch (error) {
     console.error(`❌ Setprefix error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag, fam! Try again! 😈
+│❒ *Makamesco-MD* hit a snag, fam! Try again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
