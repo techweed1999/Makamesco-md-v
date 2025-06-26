@@ -37,12 +37,12 @@ const ping = async (m, Matrix) => {
           externalAdReply: {
             showAdAttribution: true, // Marks as an ad
             title: `Toxic-MD Speed`,
-            body: `Checking your connection speed with Toxic-MD!`,
-            sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+            body: `Checking your connection speed with Makamesco-MD!`,
+            sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
-            thumbnailUrl: "https://files.catbox.moe/zaqn1j.jpg",
+            mediaUrl: "https://files.catbox.moe/sigghy.jpg'/",
+            thumbnailUrl: "https://files.catbox.moe/sigghy.jpg'/",
           },
         },
       }, { quoted: m });
@@ -51,7 +51,7 @@ const ping = async (m, Matrix) => {
     console.error(`❌ Ping error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag! Error: ${error.message || "Failed to check speed"} 😡
+│❒ *Makamesco-MD* hit a snag! Error: ${error.message || "Failed to check speed"} 😡
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
