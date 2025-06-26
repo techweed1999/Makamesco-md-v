@@ -81,13 +81,13 @@ const repo = async (m, Matrix) => {
             mentionedJid: [m.sender],
             externalAdReply: {
               showAdAttribution: true,
-              title: `Toxic-MD Repo`,
-              body: `Check the Toxic-MD repository!`,
-              sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+              title: `Makamesco-MD Repo`,
+              body: `Check the Makamesco-MD repository!`,
+              sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
               mediaType: 1,
               renderLargerThumbnail: true,
-              mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
-              thumbnailUrl: "https://files.catbox.moe/zaqn1j.jpg",
+              mediaUrl: "https://files.catbox.moe/sigghy.jpg'/",
+              thumbnailUrl: "https://files.catbox.moe/sigghy.jpg'/",
             },
           },
         },
@@ -98,7 +98,7 @@ const repo = async (m, Matrix) => {
 
     await Matrix.sendMessage(m.from, { react: { text: "⏳", key: m.key } });
 
-    const repoUrl = "https://api.github.com/repos/xhclintohn/Toxic-MD";
+    const repoUrl = "https://api.github.com/repos/makamesco/MAKAMESCO-MD-V";
     const headers = {
       Accept: "application/vnd.github.v3+json",
       ...(config.GITHUB_TOKEN ? { Authorization: `token ${config.GITHUB_TOKEN}` } : {}),
@@ -124,7 +124,7 @@ const repo = async (m, Matrix) => {
 │❒ 📅 *${toFancyFont("Created")}:* ${createdDate}
 │❒ 🕒 *${toFancyFont("Updated")}:* ${lastUpdateDate}
 │❒ 🔗 *${toFancyFont("Link")}:* ${repoData.html_url}
-│❒ 💥 *${toFancyFont("Powered By Toxic-MD")}* 🔥
+│❒ 💥 *${toFancyFont("Powered By Makamesco-MD")}* 🔥
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`;
 
     await Matrix.sendMessage(
@@ -137,12 +137,12 @@ const repo = async (m, Matrix) => {
           externalAdReply: {
             showAdAttribution: true,
             title: `Toxic-MD Repo`,
-            body: `Explore the Toxic-MD repository!`,
-            sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+            body: `Explore the Makamesco-MD repository!`,
+            sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
-            thumbnailUrl: "https://files.catbox.moe/zaqn1j.jpg",
+            mediaUrl: "https://files.catbox.moe/sigghy.jpg'/",
+            thumbnailUrl: "https://files.catbox.moe/sigghy.jpg'/",
           },
         },
       },
@@ -157,20 +157,20 @@ const repo = async (m, Matrix) => {
       {
         react: { text: "❌", key: m.key },
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* failed to fetch repo stats! 😈
-│❒ Visit: https://github.com/xhclintohn/Toxic-MD
+│❒ *Makamesco-MD* failed to fetch repo stats! 😈
+│❒ Visit:https://github.com/makamesco/Makamesco-md-v
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
         contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true,
-            title: `Toxic-MD Repo`,
-            body: `Visit the Toxic-MD repository!`,
-            sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+            title: `Makamesco-MD Repo`,
+            body: `Visit the Makamesco-MD repository!`,
+            sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
-            thumbnailUrl: "https://files.catbox.moe/zaqn1j.jpg",
+            mediaUrl: "https://files.catbox.moe/sigghy.jpg'/",
+            thumbnailUrl: "https://files.catbox.moe/sigghy.jpg'/",
           },
         },
       },
