@@ -26,7 +26,7 @@ const facebook = async (m, Matrix) => {
       await Matrix.sendMessage(m.from, { react: { text: "❌", key: m.key } });
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* couldn’t grab that video, fam! URL’s trash or somethin’s busted! 😣
+│❒ *Makamesco-MD* couldn’t grab that video, fam! URL’s trash or somethin’s busted! 😣
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -45,7 +45,7 @@ const facebook = async (m, Matrix) => {
 
     const quality = hd_video ? "HD" : "SD";
     const caption = `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* Facebook Video 📹
+│❒ *Makamesco-MD* Facebook Video 📹
 │❒ 🎬 *Title*: ${title || "No title"}
 │❒ 📥 *Quality*: ${quality}
 │❒ 💥 Powered By *Toxic-MD* 🖤
@@ -63,7 +63,7 @@ const facebook = async (m, Matrix) => {
     await Matrix.sendMessage(m.from, { react: { text: "❌", key: m.key } });
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up grabbin’ that video, fam! Try again, you got this! 😈
+│❒ *Makamesco-MD* fucked up grabbin’ that video, fam! Try again, you got this! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
