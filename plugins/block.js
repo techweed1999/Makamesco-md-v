@@ -13,7 +13,7 @@ const block = async (m, Matrix) => {
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Piss off, wannabe! Only *Toxic-MD*’s boss can throw blocks! 😤🔪
+│❒ Piss off, wannabe! Only *Makamesco-MD*’s boss can throw blocks! 😤🔪
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -30,7 +30,7 @@ const block = async (m, Matrix) => {
     if (users === m.sender) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ What, you tryna block yourself? *Toxic-MD* ain’t here for your clown shit! 🤡
+│❒ What, you tryna block yourself? *Makamesco-MD* ain’t here for your clown shit! 🤡
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -46,7 +46,7 @@ const block = async (m, Matrix) => {
     console.error(`❌ Block error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up blockin’ that loser, fam! Try again! 😈
+│❒ *Makamesco-MD* fucked up blockin’ that loser, fam! Try again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
