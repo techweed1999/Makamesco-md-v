@@ -36,14 +36,14 @@ const githubStalk = async (m, Matrix) => {
       await Matrix.sendMessage(m.from, { react: { text: "❌", key: m.key } });
       return Matrix.sendMessage(m.from, {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* can’t find that GitHub user, fam! Check the username, clown! 🤡
+│❒ *Makamesco-MD* can’t find that GitHub user, fam! Check the username, clown! 🤡
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       }, { quoted: m });
     }
 
     // Construct user profile response
     let responseMessage = `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* GitHub Stalk 🖥️
+│❒ *Makamesco-MD* GitHub Stalk 🖥️
 │❒ 👤 *Username*: @${userData.login}
 │❒ 📛 *Name*: ${userData.name || "N/A"}
 │❒ 📝 *Bio*: ${userData.bio || "N/A"}
@@ -89,7 +89,7 @@ const githubStalk = async (m, Matrix) => {
     await Matrix.sendMessage(m.from, { react: { text: "❌", key: m.key } });
     await Matrix.sendMessage(m.from, {
       text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* fucked up stalkin’ that user, fam! Try again or check the name! 😈
+│❒ *Makamesco-MD* fucked up stalkin’ that user, fam! Try again or check the name! 😈
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
     }, { quoted: m });
   }
