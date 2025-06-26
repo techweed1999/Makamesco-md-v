@@ -115,7 +115,7 @@ const repo = async (m, Matrix) => {
     const lastUpdateDate = new Date(repoData.updated_at).toLocaleDateString("en-GB");
 
     const replyText = `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *${toFancyFont("Toxic-MD")}* ${toFancyFont("Repo")} 📊
+│❒ *${toFancyFont("Makamesco-MD")}* ${toFancyFont("Repo")} 📊
 │❒ 📛 *${toFancyFont("Bot")}:* ${repoData.name || "N/A"}
 │❒ 👑 *${toFancyFont("Owner")}:* ${repoData.owner?.login || "N/A"}
 │❒ ⭐ *${toFancyFont("Stars")}:* ${repoData.stargazers_count || 0} (star it, fam!)
@@ -130,13 +130,13 @@ const repo = async (m, Matrix) => {
     await Matrix.sendMessage(
       m.from,
       {
-        image: { url: "https://files.catbox.moe/y2utve.jpg" },
+        image: { url: "https://files.catbox.moe/sigghy.jpg'/" },
         caption: replyText,
         contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true,
-            title: `Toxic-MD Repo`,
+            title: `Makamesco-MD Repo`,
             body: `Explore the Makamesco-MD repository!`,
             sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
