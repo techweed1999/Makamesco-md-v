@@ -25,7 +25,7 @@ const update = async (m, Matrix) => {
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ Piss off, wannabe! Only *Toxic-MD* or its boss can update this beast! 😤🔪
+│❒ Piss off, wannabe! Only *Makamesco-MD* or its boss can update this beast! 😤🔪
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       }, { quoted: m });
     }
@@ -35,7 +35,7 @@ const update = async (m, Matrix) => {
     const msg = await Matrix.sendMessage(
       m.from,
       { text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* is sniffin’ for updates, fam! Hold tight... 🕵️‍♂️
+│❒ *Makamesco-MD* is sniffin’ for updates, fam! Hold tight... 🕵️‍♂️
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈` },
       { quoted: m }
     );
@@ -59,7 +59,7 @@ const update = async (m, Matrix) => {
     if (!fs.existsSync(packageJsonPath)) {
       await m.React("❌");
       return editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* can’t find package.json, fam! Shit’s broken! 😣
+│❒ *Makamesco-MD* can’t find package.json, fam! Shit’s broken! 😣
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
     }
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
@@ -68,12 +68,12 @@ const update = async (m, Matrix) => {
     if (latestCommitHash === currentHash) {
       await m.React("✅");
       return editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* is fresh as fuck, fam! No updates needed! 😎🔥
+│❒ *Makamesco-MD* is fresh as fuck, fam! No updates needed! 😎🔥
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
     }
 
     await editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ New *Toxic-MD* update found! Snatchin’ that shit now... 🚀
+│❒ New *Makamesco-MD* update found! Snatchin’ that shit now... 🚀
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
 
     // Download latest ZIP
@@ -81,7 +81,7 @@ const update = async (m, Matrix) => {
     const writer = fs.createWriteStream(zipPath);
     const response = await axios({
       method: "get",
-      url: "https://github.com/xhclintohn/Ultra-MD/archive/main.zip",
+      url: "https://github.com/makamesco/Makamesco-md-v/archive/main.zip",
       responseType: "stream",
     });
 
@@ -93,7 +93,7 @@ const update = async (m, Matrix) => {
     });
 
     await editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* is rippin’ open that ZIP, fam... 📦
+│❒ *Makamesco-MD* is rippin’ open that ZIP, fam... 📦
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
 
     // Extract ZIP
@@ -102,7 +102,7 @@ const update = async (m, Matrix) => {
     zip.extractAllTo(extractPath, true);
 
     await editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ Swappin’ out the old shit for new *Toxic-MD* heat... 🔄
+│❒ Swappin’ out the old shit for new *Makamesco-MD* heat... 🔄
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
 
     // Replace files, skip configs
@@ -118,7 +118,7 @@ const update = async (m, Matrix) => {
     if (fs.existsSync(extractPath)) fs.rmSync(extractPath, { recursive: true, force: true });
 
     await editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* update locked in! Restarting to flex the new shit... ♻️🔥
+│❒ *Makamesco-MD* update locked in! Restarting to flex the new shit... ♻️🔥
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
 
     await m.React("✅");
@@ -130,7 +130,7 @@ const update = async (m, Matrix) => {
       m.from,
       {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* fucked up the update, fam! Error: ${error.message} 😈
+│❒ *Makamesco-MD* fucked up the update, fam! Error: ${error.message} 😈
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       },
       { quoted: m }
