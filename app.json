@@ -1,12 +1,12 @@
 {
   "name": "MAKAMESCO-MD-V",
   "description": "⚡ A savage WhatsApp bot built to dominate chats with toxic style! Powered by Node.js for max chaos.",
-  "keywords": ["Toxic-MD", "WhatsApp Bot", "Multi-Device", "Savage"],
-  "repository": "https://github.com/Toxic-Master/Toxic-MD",
+  "keywords": ["Makamesco-MD", "WhatsApp Bot", "Multi-Device", "Savage"],
+  "repository": "https://github.com/makamesco/Makamesco-md-v",
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "🔐 Your bot’s secret key. Use Pairing code or qr to get this or *MAKAMESCO_MD-V2* won’t start! 😤",
+      "description": "🔐 Your bot’s secret key. Use Pairing code or qr to get this or *MAKAMESCO-MD<=>* won’t start! 😤",
       "required": true,
       "value": ""
     },
@@ -18,7 +18,7 @@
     "OWNER_NAME": {
       "description": "👑 Your name, the boss of *MAKAMESCO-MD_V*. Flex it in the bot’s credits! 😎",
       "required": true,
-      "value": "Toxic-Master"
+      "value": "Marcas"
     },
     "PREFIX": {
       "description": "🔠 Command trigger (e.g., ‘.’ for !ping). Keep it short or look like a clown! 🤡",
