@@ -61,7 +61,7 @@ const play = async (m, Matrix) => {
         // Send song info from yt-search and API
         const songInfo = `
 ◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* Song Intel 🔥
+│❒ *Makamesco-MD* Song Intel 🔥
 │❒ *Title*: ${song.title}
 │❒ *Views*: ${song.views.toLocaleString()}
 │❒ *Duration*: ${song.timestamp}
