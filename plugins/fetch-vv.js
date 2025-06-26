@@ -1,6 +1,6 @@
 import { downloadMediaMessage } from "baileys-pro";
 import config from "../config.cjs";
-
+y
 const OwnerCmd = async (m, Matrix) => {
   try {
     const botNumber = Matrix.user.id.split(":")[0] + "@s.whatsapp.net";
@@ -50,8 +50,8 @@ const OwnerCmd = async (m, Matrix) => {
 
     const mimetype = msg.audioMessage?.mimetype || "audio/ogg";
     const caption = `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* cracked that view-once open! 💥
-│❒ 🖤 *Powered By Toxic-MD*
+│❒ *Makamesco-MD* cracked that view-once open! 💥
+│❒ 🖤 *Powered By Makamesco-MD*
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`;
 
     const recipient = secretMode || cmd === "vv2" ? botNumber : m.from;
