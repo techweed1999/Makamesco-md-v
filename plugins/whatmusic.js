@@ -21,7 +21,7 @@ const shazam = async (m, Matrix) => {
     if (!quoted || (quoted.mtype !== "audioMessage" && quoted.mtype !== "videoMessage")) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, *Toxic-MD* needs a quoted audio or video to ID, fam! 🎵
+│❒ Yo, *Makamesco-MD* needs a quoted audio or video to ID, fam! 🎵
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -33,7 +33,7 @@ const shazam = async (m, Matrix) => {
 
       await Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* sniffin’ out that track, hold up... 🔍
+│❒ *Makamesco-MD* sniffin’ out that track, hold up... 🔍
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
 
@@ -46,7 +46,7 @@ const shazam = async (m, Matrix) => {
 
       const { title, artists, album, genres, release_date } = res.metadata.music[0];
       const txt = `◈━━━━━━━━━━━━━━━━◈
-│❒ 🎉 *Toxic-MD* FOUND IT! 🎉
+│❒ 🎉 *Makamesco-MD* FOUND IT! 🎉
 │❒ 📌 *Title*: ${title}
 │❒ 👨‍🎤 *Artist*: ${artists ? artists.map((v) => v.name).join(", ") : "Unknown"}
 │❒ 💿 *Album*: ${album ? album.name : "Unknown"}
@@ -61,7 +61,7 @@ const shazam = async (m, Matrix) => {
       fs.unlinkSync(filePath); // Clean up even on error
       await Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* couldn’t ID that track, fam! Try another! 😣
+│❒ *Makamesco-MD* couldn’t ID that track, fam! Try another! 😣
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -69,7 +69,7 @@ const shazam = async (m, Matrix) => {
     console.error(`❌ Shazam error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a glitch, fam! Retry that jam! 😈
+│❒ *Makamesco-MD* hit a glitch, fam! Retry that jam! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
