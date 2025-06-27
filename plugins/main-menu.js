@@ -124,10 +124,10 @@ const menu = async (m, Matrix) => {
         menuImage = Buffer.from(response.data, "binary");
       } catch (error) {
         console.error("Error fetching menu image:", error.message);
-        menuImage = fs.readFileSync("./media/toxic.jpg");
+        menuImage = fs.readFileSync("https://files.catbox.moe/wu6lu4.jpg");
       }
     } else {
-      menuImage = fs.readFileSync("./media/toxic.jpg");
+      menuImage = fs.readFileSync("https://files.catbox.moe/wu6lu4.jpg");
     }
 
     await Matrix.sendMessage(
