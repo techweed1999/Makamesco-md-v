@@ -91,7 +91,7 @@ function toFancyFont(text, isUpperCase = false) {
 
 // Image fetch utility
 async function fetchMenuImage() {
-  const imageUrl = "https://files.catbox.moe/y2utve.jpg";
+  const imageUrl = "https://files.catbox.moe/wu6lu4.jpg";
   for (let i = 0; i < 3; i++) {
     try {
       const response = await axios.get(imageUrl, { responseType: "arraybuffer" });
@@ -146,7 +146,7 @@ const menu = async (m, Matrix) => {
 
 ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
 
-> Pσɯҽɾҽԃ Ⴆყ Tσxιƈ-ɱԃȥ
+> Pσɯҽɾҽԃ Ⴆყ *Makamesco md*
 `;
 
       const messageOptions = {
@@ -202,7 +202,7 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true, // Marks as an ad
-            title: `${toFancyFont("Toxic-MD")} Menu`,
+            title: `${toFancyFont("Makamesco-MD")} Menu`,
             body: `${pushwish} Explore Makamesco-MD's features!`,
             sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
@@ -408,9 +408,9 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
       // Format the full response
       const fullResponse = `
 ◈━━━━━━━━━━━━━━━━◈
-│❒ ${toFancyFont("Toxic-MD")} - ${toFancyFont(menuTitle)} ⚠
+│❒ ${toFancyFont("Makamesco-MD")} - ${toFancyFont(menuTitle)} ⚠
 │
-│ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("Toxic-MD")}
+│ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("Makamesco-MD")}
 │ 👤 *${toFancyFont("User")}*: ${m.pushName}
 │ 🔣 *${toFancyFont("Prefix")}*: ${prefix}
 │ 📚 *${toFancyFont("Library")}*: Baileys
@@ -432,7 +432,7 @@ ${menuResponse}
               mentionedJid: [m.sender],
               externalAdReply: {
                 showAdAttribution: true, // Marks as an ad
-                title: `${toFancyFont("Toxic-MD")} ${toFancyFont(menuTitle)}`,
+                title: `${toFancyFont("Makamesco-MD")} ${toFancyFont(menuTitle)}`,
                 body: `Explore Makamesco-MD's ${menuTitle.toLowerCase()} commands!`,
                 sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
                 mediaType: 1,
@@ -450,7 +450,7 @@ ${menuResponse}
             mentionedJid: [m.sender],
             externalAdReply: {
               showAdAttribution: true, // Marks as an ad
-              title: `${toFancyFont("Toxic-MD")} ${toFancyFont(menuTitle)}`,
+              title: `${toFancyFont("Makamesco-MD")} ${toFancyFont(menuTitle)}`,
               body: `Explore Makamesco-MD's ${menuTitle.toLowerCase()} commands!`,
               sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
               mediaType: 1,
@@ -464,7 +464,7 @@ ${menuResponse}
     console.error(`❌ Menu error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag! Error: ${error.message || "Failed to load menu"} 😡
+│❒ *Makamesco-MD* hit a snag! Error: ${error.message || "Failed to load menu"} 😡
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
