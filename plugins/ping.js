@@ -27,7 +27,7 @@ const ping = async (m, Matrix) => {
       const responseTime = (end - start) / 1000;
 
       const message = `◈━━━━━━━━━━━━━━━━◈
-│❒ Toxic-MD speed - ${responseTime.toFixed(1)}s! ${reactionEmoji}
+│❒ Makamesco-MD speed - ${responseTime.toFixed(1)}s! ${reactionEmoji}
 ◈━━━━━━━━━━━━━━━━◈`;
 
       await Matrix.sendMessage(m.from, {
@@ -36,7 +36,7 @@ const ping = async (m, Matrix) => {
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true, // Marks as an ad
-            title: `Toxic-MD Speed`,
+            title: `Makamesco-MD Speed`,
             body: `Checking your connection speed with Makamesco-MD!`,
             sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
