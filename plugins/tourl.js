@@ -128,7 +128,7 @@ const tourl = async (m, Matrix) => {
         {
           [mediaType]: { url: mediaUrl },
           caption: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* got your ${mediaType} URL, fam! 📸🎥
+│❒ *Makamesco-MD* got your ${mediaType} URL, fam! 📸🎥
 │❒ 🔗 *URL*: ${mediaUrl}
 ◈━━━━━━━━━━━━━━━━◈`,
         },
