@@ -18,16 +18,29 @@
 ---
 
 <div align="center">
-  <a href="https://deployment-site-amber.vercel.app/">
-    <img src="https://img.shields.io/badge/DEPLOY%20NOW-222222?style=for-the-badge&logo=vercel&logoColor=white" alt="Deploy Now Button"/>
+  <!-- Fork Repo -->
+  <a href="https://github.com/makamesco/Makamesco-md-v/fork" target="_blank">
+    <img src="https://img.shields.io/badge/FORK_&_STAR_OUR_REPO-181717?style=for-the-badge&logo=github&logoColor=white" alt="Fork & Star Repo"/>
   </a>
 </div>
 
----
+<br/>
 
-## 🛠️ SESSION PAIRING
+<div align="center">
+  <!-- Session ID -->
+  <a href="https://makamesco-md-code.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/GET_SESSION_ID-HERE-green?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Get Session ID"/>
+  </a>
+</div>
 
-[![GET SESSION ID HERE](https://img.shields.io/badge/GET-SESSION%20ID%20HERE-green?style=for-the-badge&logo=kenya)](https://makamesco-md-code.onrender.com)
+<br/>
+
+<div align="center">
+  <!-- Deploy Button -->
+  <a href="https://deployment-site-amber.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/DEPLOY_NOW-222222?style=for-the-badge&logo=vercel&logoColor=white" alt="Deploy Now"/>
+  </a>
+</div>
 
 ---
 
