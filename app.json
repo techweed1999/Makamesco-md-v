@@ -7,7 +7,7 @@
   "env": {
     "SESSION_ID": {
       "description": "🔐 Your bot’s secret key. Use Pairing code or qr to get this or *MAKAMESCO-MD<=>* won’t start! 😤",
-      "required": true,
+      "required": false,
       "value": ""
     },
     "OWNER_NUMBER": {
