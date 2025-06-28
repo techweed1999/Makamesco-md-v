@@ -137,7 +137,7 @@ const menu = async (m, Matrix) => {
 ◈━━━━━━━━━━━━━━━━◈
 │❒ ${toFancyFont("Makamesco-MD")} Command Menu ⚠
 │
-│ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("Toxic-MD")}
+│ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("Makamesco-MD")}
 │ 📋 *${toFancyFont("Total Commands")}*: ${totalCommands}
 │ 🔣 *${toFancyFont("Prefix")}*: ${prefix}
 │ 🌐 *${toFancyFont("Mode")}*: ${mode}
@@ -146,7 +146,7 @@ const menu = async (m, Matrix) => {
 
 ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
 
-> Pσɯҽɾҽԃ Ⴆყ *Makamesco md*
+> Pσɯҽɾҽԃ Ⴆყ Makamesco-ɱԃ
 `;
 
       const messageOptions = {
@@ -202,12 +202,12 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true, // Marks as an ad
-            title: `${toFancyFont("Makamesco-MD")} Menu`,
-            body: `${pushwish} Explore Makamesco-MD's features!`,
+            title: `${toFancyFont("Toxic-MD")} Menu`,
+            body: `${pushwish} Explore Toxic-MD's features!`,
             sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/sigghy.jpg'/",
+            mediaUrl: "https://files.catbox.moe/wu6lu4.jpg",
           },
         },
       };
@@ -418,7 +418,7 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
 
 ${menuResponse}
 
-> Pσɯҽɾҽԃ Ⴆყ Makamesco-ɱԃȥ
+> Pσɯҽɾҽԃ Ⴆყ Makamesco-ɱԃ
 `;
 
       // Send sub-menu with or without image
@@ -432,12 +432,12 @@ ${menuResponse}
               mentionedJid: [m.sender],
               externalAdReply: {
                 showAdAttribution: true, // Marks as an ad
-                title: `${toFancyFont("Makamesco-MD")} ${toFancyFont(menuTitle)}`,
-                body: `Explore Makamesco-MD's ${menuTitle.toLowerCase()} commands!`,
+                title: `${toFancyFont("Toxic-MD")} ${toFancyFont(menuTitle)}`,
+                body: `Explore Toxic-MD's ${menuTitle.toLowerCase()} commands!`,
                 sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
                 mediaType: 1,
                 renderLargerThumbnail: true,
-                mediaUrl: "https://files.catbox.moe/sigghy.jpg'/",
+                mediaUrl: "https://files.catbox.moe/wu6lu4.jpg",
               },
             },
           },
