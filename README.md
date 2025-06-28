@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MAKAMESCO_XMD</title>
+  <title>MAKAMESCO_MD-V</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -12,48 +12,26 @@
       padding: 20px;
       text-align: center;
     }
-
     h1, h2 {
       margin: 0.3em 0;
     }
-
     a {
       text-decoration: none;
     }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      padding: 14px 28px;
-      margin: 15px auto;
-      font-size: 17px;
-      font-weight: 600;
-      border-radius: 8px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-      transition: all 0.3s ease;
+    .icon-button {
+      display: inline-block;
+      margin: 20px 15px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
-
-    .button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    .icon-button img {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-
-    .github-btn {
-      background-color: #24292e;
-      color: white;
+    .icon-button:hover {
+      transform: translateY(-5px);
     }
-
-    .vercel-btn {
-      background-color: #000;
-      color: white;
-    }
-
-    .session-btn img {
-      margin-top: 10px;
-    }
-
     details {
       max-width: 600px;
       margin: 20px auto;
@@ -63,18 +41,15 @@
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-
     hr {
       margin: 40px 0;
       border: none;
       border-top: 2px dashed #ccc;
     }
-
     .footer-icon img {
       width: 100px;
       margin-top: 20px;
     }
-
   </style>
 </head>
 <body>
@@ -96,24 +71,21 @@
     </ul>
   </details>
 
-  <!-- GitHub Fork & Star Button -->
+  <!-- ICON BUTTONS SECTION -->
   <div>
-    <a href="https://github.com/makamesco/Makamesco-md-v/fork" target="_blank" class="button github-btn">
-      ⭐ Fork & Star Our Repo
+    <!-- Fork GitHub -->
+    <a href="https://github.com/makamesco/Makamesco-md-v/fork" target="_blank" class="icon-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Fork Icon" title="Fork & Star Repo" />
     </a>
-  </div>
 
-  <!-- Get Session ID -->
-  <div class="session-btn">
-    <a href="https://makamesco-md-code.onrender.com" target="_blank">
-      <img src="https://img.shields.io/badge/GET_SESSION_ID-HERE-green?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Get Session ID"/>
+    <!-- Get Session ID -->
+    <a href="https://makamesco-md-code.onrender.com" target="_blank" class="icon-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Session ID Icon" title="Get Session ID" />
     </a>
-  </div>
 
-  <!-- Deploy Button with Rocket Icon -->
-  <div>
-    <a href="https://deployment-site-amber.vercel.app/" target="_blank" class="button vercel-btn">
-      🚀 Deploy Now 
+    <!-- Deploy Now -->
+    <a href="https://deployment-site-amber.vercel.app/" target="_blank" class="icon-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Deploy Icon" title="Deploy Now" />
     </a>
   </div>
 
