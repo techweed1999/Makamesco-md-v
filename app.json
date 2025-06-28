@@ -5,11 +5,6 @@
   "repository": "https://github.com/makamesco/Makamesco-md-v",
   "stack": "container",
   "env": {
-    "SESSION_ID": {
-      "description": "🔐 Your bot’s secret key. Use Pairing code or qr to get this then replace 'session id here' under session.json file in your fork not here leave here blank orwon’t start! 😤",
-      "required": false,
-      "value": ""
-    },
     "OWNER_NUMBER": {
       "description": "📱 Your WhatsApp number (with country code, no +). Who’s runnin’ this show? 💪",
       "required": true,
