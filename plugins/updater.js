@@ -49,7 +49,7 @@ const update = async (m, Matrix) => {
     };
 
     // Fetch latest commit hash
-    const { data: commitData } = await axios.get("https://api.github.com/repos/xhclintohn/Ultra-MD/commits/main", {
+    const { data: commitData } = await axios.get("https://api.github.com/repos/makamesco/Makamesco-md-v/commits/main", {
       headers: config.GITHUB_TOKEN ? { Authorization: `token ${config.GITHUB_TOKEN}` } : {},
     });
     const latestCommitHash = commitData.sha;
