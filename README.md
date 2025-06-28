@@ -26,16 +26,12 @@
 
 <br>
 
-**𝗛𝗢𝗦𝗧 𝗢𝗡 𝗗𝗜𝗦𝗖𝗢𝗥𝗗**
+**PANEL FILES**
 <details>
-<summary>CLICK FOR MORE</summary>
 <a href="https://github.com/makamesco/Makamesco-md-v/archive/refs/heads/main.zip">
   <img src="https://img.shields.io/badge/DOWNLOAD%20FILES-yellow" alt="Rainhost Files" width="150">
 </a>
   
-<a href="https://bot-hosting.net/?aff=1259151615210819614">
-  <img src="https://img.shields.io/badge/SIGNUP%20&%20DEPLOY-gold" alt="Scalingo Deploy" width="150">
-</a>
 </details>
 
 ## 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦 𝗕𝗬 𝗝𝗢𝗜𝗡𝗜𝗡𝗚 𝗧𝗛𝗘𝗦𝗘 𝗟𝗜𝗡𝗞𝗦
