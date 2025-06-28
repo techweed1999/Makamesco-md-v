@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Makamesco_XMD</title>
+  <title>MAKAMESCO_XMD</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #f4f4f4;
       color: #222;
       margin: 0;
       padding: 20px;
@@ -14,33 +14,40 @@
     }
 
     h1, h2 {
-      margin: 0.2em 0;
+      margin: 0.3em 0;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     .button {
-      display: inline-block;
-      padding: 15px 25px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 28px;
       margin: 15px auto;
-      font-size: 16px;
-      font-weight: bold;
-      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
       border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s, box-shadow 0.3s;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
     }
 
     .button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
 
     .github-btn {
       background-color: #24292e;
+      color: white;
     }
 
     .vercel-btn {
       background-color: #000;
+      color: white;
     }
 
     .session-btn img {
@@ -51,6 +58,10 @@
       max-width: 600px;
       margin: 20px auto;
       text-align: left;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     hr {
@@ -59,11 +70,16 @@
       border-top: 2px dashed #ccc;
     }
 
+    .footer-icon img {
+      width: 100px;
+      margin-top: 20px;
+    }
+
   </style>
 </head>
 <body>
 
-  <a><img src='https://files.catbox.moe/sigghy.jpg'/></a>
+  <a><img src='https://files.catbox.moe/sigghy.jpg' alt="Banner"/></a>
 
   <h1>MAKAMESCO_XMD</h1>
   <h2>Stay on track — everyone is mad 😈</h2>
@@ -80,10 +96,10 @@
     </ul>
   </details>
 
-  <!-- Fork Repo Button -->
+  <!-- GitHub Fork & Star Button -->
   <div>
     <a href="https://github.com/makamesco/Makamesco-md-v/fork" target="_blank" class="button github-btn">
-      ⭐ Fork & Star Our Repo on GitHub
+      ⭐ Fork & Star Our Repo
     </a>
   </div>
 
@@ -94,7 +110,7 @@
     </a>
   </div>
 
-  <!-- Deploy Button -->
+  <!-- Deploy Button with Rocket Icon -->
   <div>
     <a href="https://deployment-site-amber.vercel.app/" target="_blank" class="button vercel-btn">
       🚀 Deploy Now 
@@ -103,20 +119,24 @@
 
   <hr>
 
+  <a><img src='https://files.catbox.moe/sigghy.jpg' alt="Banner Footer"/></a>
+
   <hr>
 
-  <!-- Support -->
+  <!-- Support Section -->
   <h3>💡 SUPPORT MAKAMESCO BY FOLLOWING US</h3>
 
+  <!-- Website -->
   <p>
     <a href="https://Makamescodigitalsolutions.com" target="_blank">
-      <img src="https://img.shields.io/badge/VISIT_TO_MY_WEBSITE-25D366?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website">
+      <img src="https://img.shields.io/badge/VISIT_TO_MY_WEBSITE-25D366?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website Button">
     </a>
   </p>
 
-  <p>
+  <!-- WhatsApp Channel -->
+  <p class="footer-icon">
     <a href="https://whatsapp.com/channel/0029VbAEL9r5vKA7RCdnYG0S" target="_blank">
-      <img alt="Whatsapp Channel" width="100px" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
+      <img alt="Whatsapp Channel" src="https://raw.githubusercontent.com/PikaBotz/My_Personal_Space/main/Images/AnyaBot_pics/Anya_v2/Whatsapp.svg" />
     </a>
   </p>
 
