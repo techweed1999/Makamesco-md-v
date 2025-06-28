@@ -6,7 +6,7 @@
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "🔐 Your bot’s secret key. Use Pairing code or qr to get this or *MAKAMESCO-MD<=>* won’t start! 😤",
+      "description": "🔐 Your bot’s secret key. Use Pairing code or qr to get this then replace 'session id here' under session.json file in your fork not here leave here blank orwon’t start! 😤",
       "required": false,
       "value": ""
     },
