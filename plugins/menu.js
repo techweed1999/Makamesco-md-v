@@ -202,8 +202,8 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true, // Marks as an ad
-            title: `${toFancyFont("Toxic-MD")} Menu`,
-            body: `${pushwish} Explore Toxic-MD's features!`,
+            title: `${toFancyFont("Makamesco-MD")} Menu`,
+            body: `${pushwish} Explore Makamesco-MD's features!`,
             sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
             mediaType: 1,
             renderLargerThumbnail: true,
@@ -432,8 +432,8 @@ ${menuResponse}
               mentionedJid: [m.sender],
               externalAdReply: {
                 showAdAttribution: true, // Marks as an ad
-                title: `${toFancyFont("Toxic-MD")} ${toFancyFont(menuTitle)}`,
-                body: `Explore Toxic-MD's ${menuTitle.toLowerCase()} commands!`,
+                title: `${toFancyFont("Makamesco-MD")} ${toFancyFont(menuTitle)}`,
+                body: `Explore Makamesco-MD's ${menuTitle.toLowerCase()} commands!`,
                 sourceUrl: "https://github.com/makamesco/Makamesco-md-v",
                 mediaType: 1,
                 renderLargerThumbnail: true,
